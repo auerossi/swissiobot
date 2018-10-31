@@ -5,18 +5,6 @@
   <version>1.0.0</version>
   <dependencies>
     <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk</artifactId>
-      <version>1.11.438</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>amazon-kinesis-client</artifactId>
-      <version>1.2.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
@@ -27,6 +15,11 @@
     <artifactId>JDA</artifactId>
     <version>3.8.0_436</version>
 	</dependency>
+	<dependency>
+  <groupId>jboss.web</groupId>
+  <artifactId>servlet-api</artifactId>
+  <version>2.1.0.GA</version>
+</dependency>
   </dependencies>
     <repositories>
   <repository>
@@ -35,4 +28,17 @@
     <url>http://jcenter.bintray.com</url>
 </repository>
   </repositories>
+  <build>
+		<plugins>
+			
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+        		<artifactId>heroku-maven-plugin</artifactId>
+        		<version>1.1.3</version>
+        		<configuration>
+        			<appName>swissiobot</appName>
+        		</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

@@ -29,7 +29,7 @@ public class App extends ListenerAdapter
     	Message message = event.getMessage(); 
     	if (message.getContentRaw().equalsIgnoreCase(Ref.prefix+"ping"))
     	{
-    		MessageAction ma = msgChannel.sendMessage(user.getAsMention() + " Pong!");
+    		MessageAction ma = msgChannel.sendMessage(user.getAsMention() + " Pong!!");
     		ma.queue();
     	}
     	String chartsSwissIO = "500757220011802645";
