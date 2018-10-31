@@ -3,6 +3,9 @@
   <groupId>io.swissio</groupId>
   <artifactId>swissiobot</artifactId>
   <version>1.0.0</version>
+  <properties>
+        <src.dir>src</src.dir>
+    </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
