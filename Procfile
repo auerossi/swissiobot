@@ -1,1 +1,1 @@
-worker: java -jar target/*.jar
+worker: java -jar target/swissiobot-0.0.1-SNAPSHOT.jar
